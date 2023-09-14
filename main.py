@@ -1,9 +1,10 @@
 def fibonacci(n):
-    a, b = 0, 1
-    fibonacci_list = []
+    fibonacci_list =[]
     for i in range(n):
-        a, b = b, a+b
-        fibonacci_list.append(a)
+        if i == 1 or i == 0:
+            fibonacci_list.append(1)
+        else:
+            fibonacci_list.append(fibonacci_list[i-2]+fibonacci_list[i-1])
     return fibonacci_list
 
 
