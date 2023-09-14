@@ -8,7 +8,8 @@ def fibonacci(n):
 
 
 def print_sequence(sequence):
-    print(sequence)
+    for num in sequence:
+        print(num)
 
 
 if __name__ == '__main__':
